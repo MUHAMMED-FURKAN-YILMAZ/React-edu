@@ -1,0 +1,19 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  background-color: rgb(183, 12, 183);
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+
+  .sidebar-card {
+    display: inline-block;
+    margin: 1rem 2rem;
+    padding: 1.5rem 4rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 3px 5px rgb(146, 64, 146);
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  margin: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  background-color: rgb(132, 174, 48);
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    margin-left: 4rem;
+    padding: 1rem 5rem;
+    background-color: aliceblue;
+    color: rgb(132, 174, 48);
+    border-radius: 2rem;
+  }
+
+  .items {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+  }
+}
