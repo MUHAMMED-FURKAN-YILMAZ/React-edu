@@ -13,9 +13,12 @@ import Clock1 from "./components/05-clock1/clock1";
 import Greetings from "./components/06-props-1/greeting";
 import Products from "./components/07-props-2/products";
 import Clock2 from "./components/08-clock2/clock2";
-import Content from "./components/replit/1-container/content";
-import Header from "./components/replit/1-container/header";
-import SideBar from "./components/replit/1-container/sideBar";
+import Gallery from "./components/09-image/gallery";
+import Image from "./components/09-image/image";
+import ProfileCard from "./components/10-profile-card/profile-card";
+import Content from "./components/replit/1-container/r-content";
+import Header from "./components/replit/1-container/r-header";
+import SideBar from "./components/replit/1-container/r-sideBar";
 
 const App = () => {
   return (
@@ -40,7 +43,18 @@ const App = () => {
 
       {/*     <Header />
       <SideBar />
-      <Content /> */}
+      <Content /> 
+      <Image /> 
+      <Gallery />
+      */}
+      <ProfileCard
+        avatar="profile.jpg"
+        name="Ali Gel"
+        location="Turkey, Istanbul"
+        shot="3"
+        followers="23432"
+        following="234"
+      />
     </div>
   );
 };

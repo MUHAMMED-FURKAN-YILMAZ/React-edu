@@ -1,5 +1,5 @@
 import React from "react";
-import "./content.scss";
+import "./r-content.scss";
 
 const Content = () => {
   return (
