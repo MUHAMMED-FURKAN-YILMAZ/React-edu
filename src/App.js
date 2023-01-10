@@ -16,6 +16,11 @@ import Clock2 from "./components/08-clock2/clock2";
 import Gallery from "./components/09-image/gallery";
 import Image from "./components/09-image/image";
 import ProfileCard from "./components/10-profile-card/profile-card";
+import BootstrapDynamic from "./components/11-bootstrap/bootstrap-dynamic";
+import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
+import Icon from "./components/12-icons/icon";
+import Events from "./components/13--events/events";
+import Shop from "./components/14-products/shop";
 import Content from "./components/replit/1-container/r-content";
 import Header from "./components/replit/1-container/r-header";
 import SideBar from "./components/replit/1-container/r-sideBar";
@@ -46,7 +51,7 @@ const App = () => {
       <Content /> 
       <Image /> 
       <Gallery />
-      */}
+      
       <ProfileCard
         avatar="profile.jpg"
         name="Ali Gel"
@@ -55,6 +60,13 @@ const App = () => {
         followers="23432"
         following="234"
       />
+      
+      <BootstrapStatic />
+      <BootstrapDynamic/>
+      <Icon/>
+      <Events />
+      */}
+      <Shop />
     </div>
   );
 };
