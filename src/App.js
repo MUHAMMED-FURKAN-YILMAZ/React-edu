@@ -21,6 +21,10 @@ import BootstrapStatic from "./components/11-bootstrap/bootstrap-static";
 import Icon from "./components/12-icons/icon";
 import Events from "./components/13--events/events";
 import Shop from "./components/14-products/shop";
+import State from "./components/15-usestate/state";
+import Stateless from "./components/15-usestate/stateless";
+import Counter from "./components/16-counter/counter";
+import Birthday from "./components/17-birthday/birthday";
 import Content from "./components/replit/1-container/r-content";
 import Header from "./components/replit/1-container/r-header";
 import SideBar from "./components/replit/1-container/r-sideBar";
@@ -65,8 +69,12 @@ const App = () => {
       <BootstrapDynamic/>
       <Icon/>
       <Events />
-      */}
       <Shop />
+      <Stateless />
+      <State />
+      <Counter/>
+      */}
+      <Birthday/>
     </div>
   );
 };
