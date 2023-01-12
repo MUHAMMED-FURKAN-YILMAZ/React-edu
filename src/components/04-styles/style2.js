@@ -1,6 +1,7 @@
 import React from "react";
 
 const Style2 = () => {
+  
   const styleTitle = {
     fontSize: "2rem",
     color: "red",
