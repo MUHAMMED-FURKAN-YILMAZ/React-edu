@@ -1,0 +1,12 @@
+.about-us {
+  background-color: red;
+  color: white;
+  margin: 2rem 0;
+  padding: 2rem;
+  transform: translateX(120%);
+  transition: transform 1s;
+
+  &.active {
+    transform: translateX(0);
+  }
+}

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
+
 const UseEffect2 = () => {
   const [counter, setCounter] = useState(0);
+  
   useEffect(() => {
     document.title = `Hello ${counter}`;
   }, [counter]);
