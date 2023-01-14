@@ -32,6 +32,8 @@ import CountryFilter from "./components/20-country-filter/country-filter";
 import Scroll from "./components/21-useref/scroll";
 import UseRef from "./components/21-useref/useref";
 import ClassComp from "./components/22-class-type-component/class-comp";
+import UserCards from "./components/23-fetch-users/user-cards";
+import Countries from "./components/24-axios-countries/countries";
 import Content from "./components/replit/1-container/r-content";
 import Header from "./components/replit/1-container/r-header";
 import SideBar from "./components/replit/1-container/r-sideBar";
@@ -87,8 +89,10 @@ const App = () => {
       <CountryFilter />
       <UseRef />
        <Scroll/>
+       <ClassComp/>
+       <UserCards/>
       */}
-     <ClassComp/>
+      <Countries />
     </div>
   );
 };
