@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Container, Form } from "react-bootstrap";
-const Form4 = () => {
+import { Button, Container, Form } from "react-bootstrap";
+const Form5 = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -13,10 +13,34 @@ const Form4 = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    try {
+      if (!formData.firstName) throw new Error("Adınızı giriniz");
+      if (!formData.lastName) throw new Error("Soyadınızı giriniz");
+      if (!formData.email) throw new Error("Emailinizi giriniz");
+      if (!formData.phone) throw new Error("Telefonunuzu giriniz");
+
+      setTimeout(() => {
+        alert("Bilgileriniz gönderildi");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+        });
+      }, 1000);
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  };
+
   return (
     <Container className="mt-5">
-      <Form>
+      <Form method="post" onSubmit={handleSubmit} noValidate>
         <Form.Group className="mb-3">
           <Form.Label>İsim</Form.Label>
           <Form.Control
@@ -47,7 +71,7 @@ const Form4 = () => {
             onChange={(e) => handleFormData(e)}
           />
         </Form.Group>
-        <Form.Group>
+        <Form.Group className="mb-3">
           <Form.Label>Telefon</Form.Label>
           <Form.Control
             name="phone"
@@ -57,8 +81,11 @@ const Form4 = () => {
             onChange={(e) => handleFormData(e)}
           />
         </Form.Group>
+        <Button variant="info" type="submit">
+          Kaydet
+        </Button>
       </Form>
     </Container>
   );
 };
-export default Form4;
+export default Form5;

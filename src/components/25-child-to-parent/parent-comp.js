@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from "react";
+import ChildComp from "./child-comp";
 
 const ParentComp = () => {
-  return (
-    <div>ParentComp</div>
-  )
-}
+  const [counter, setCounter] = useState(0);
 
-export default ParentComp
+  const handleCounter = (val) => {
+    console.log(val);
+
+    setCounter((prev) => prev + val);
+  };
+
+  return (
+    <div>
+      <div>Counter: {counter}</div>
+      <ChildComp handleCounter={handleCounter} />
+    </div>
+  );
+};
+
+export default ParentComp;
