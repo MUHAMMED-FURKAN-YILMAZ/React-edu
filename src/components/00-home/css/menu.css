@@ -1,0 +1,51 @@
+nav {
+  height: 80vh;
+  overflow-y: scroll;
+}
+nav::-webkit-scrollbar {
+  width: 0.5rem;
+}
+nav::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+nav::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul {
+  overflow: hidden;
+}
+nav > ul > li > div {
+  background-color: burlywood;
+  padding: 0.3rem;
+  border-top: 0.2rem solid white;
+  border-bottom: 0.2rem solid white;
+  position: relative;
+  z-index: 3;
+}
+nav > ul ul {
+  background-color: rgb(252, 239, 222);
+  transform: translateY(-100%);
+  height: 0;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+  position: relative;
+  z-index: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 100%;
+}
+nav .collapsable {
+  cursor: pointer;
+}
+nav .collapsed + ul {
+  transform: translateY(0);
+  height: auto;
+}/*# sourceMappingURL=menu.css.map */

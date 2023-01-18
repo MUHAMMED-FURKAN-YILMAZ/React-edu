@@ -1,0 +1,11 @@
+.about-us {
+  background-color: red;
+  color: white;
+  margin: 2rem 0;
+  padding: 2rem;
+  transform: translateX(120%);
+  transition: transform 1s;
+}
+.about-us.active {
+  transform: translateX(0);
+}/*# sourceMappingURL=scroll.css.map */
